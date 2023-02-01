@@ -1,5 +1,7 @@
 import { Scene } from "renderer";
 
-export default function Web() {
+const Level = () => {
   return <Scene />;
-}
+};
+
+export default Level;

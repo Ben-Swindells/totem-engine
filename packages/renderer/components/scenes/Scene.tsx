@@ -8,7 +8,7 @@ import { Box } from "../primitive-objects";
 
 export const Scene = () => {
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-screen bg-black">
       <Canvas>
         <ambientLight />
         <OrbitControls />
