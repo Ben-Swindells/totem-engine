@@ -1,5 +1,5 @@
-import { Scene } from "renderer";
+import Level from "../components/Level";
 
 export default function Web() {
-  return <Scene />;
+  return <Level />;
 }
