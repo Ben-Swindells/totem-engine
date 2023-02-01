@@ -1,10 +1,5 @@
 import { Scene } from "renderer";
 
 export default function Web() {
-  return (
-    <div>
-      <h1>Web</h1>
-      <Scene />
-    </div>
-  );
+  return <Scene />;
 }
