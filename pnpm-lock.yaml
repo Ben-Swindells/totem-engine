@@ -12,7 +12,7 @@ importers:
       prettier: 2.8.3
       turbo: 1.7.1
 
-  apps/dashboard:
+  apps/editor:
     specifiers:
       '@babel/core': ^7.0.0
       '@types/node': ^17.0.12
@@ -29,6 +29,7 @@ importers:
       tailwindcss: ^3.2.4
       tsconfig: workspace:*
       typescript: ^4.5.3
+      ui: workspace:*
     dependencies:
       autoprefix: 1.0.1
       next: 13.1.6_pjwopsidmaokadturxaafygjp4
@@ -37,6 +38,7 @@ importers:
       react-dom: 18.2.0_react@18.2.0
       renderer: link:../../packages/renderer
       tailwindcss: 3.2.4_postcss@8.4.21
+      ui: link:../../packages/ui
     devDependencies:
       '@babel/core': 7.20.12
       '@types/node': 17.0.45
@@ -99,6 +101,39 @@ importers:
 
   packages/tsconfig:
     specifiers: {}
+
+  packages/ui:
+    specifiers:
+      '@types/react': ^18.0.17
+      '@types/react-dom': ^18.0.6
+      '@types/three': ^0.149.0
+      autoprefix: ^1.0.1
+      eslint: ^7.32.0
+      eslint-config-custom: workspace:*
+      postcss: ^8.4.21
+      react: ^18.2.0
+      react-dom: 18.2.0
+      react-three-fiber: ^6.0.13
+      tailwindcss: ^3.2.4
+      three: ^0.149.0
+      tsconfig: workspace:*
+      typescript: ^4.5.2
+    dependencies:
+      '@types/three': 0.149.0
+      autoprefix: 1.0.1
+      postcss: 8.4.21
+      react-dom: 18.2.0_react@18.2.0
+      react-three-fiber: 6.0.13_xor7byvqlg4baqj6ymfbcmaax4
+      tailwindcss: 3.2.4_postcss@8.4.21
+      three: 0.149.0
+    devDependencies:
+      '@types/react': 18.0.27
+      '@types/react-dom': 18.0.10
+      eslint: 7.32.0
+      eslint-config-custom: link:../eslint-config-custom
+      react: 18.2.0
+      tsconfig: link:../tsconfig
+      typescript: 4.9.5
 
 packages:
 
