@@ -1,4 +1,4 @@
-import { Canvas } from "react-three-fiber";
+import { Canvas } from "@react-three/fiber";
 
 //Cameras
 import { OrbitControls } from "../cameras";
@@ -8,7 +8,7 @@ import { Box } from "../primitive-objects";
 
 export const Scene = () => {
   return (
-    <div className="w-screen h-screen bg-black">
+    <div className="w-full h-full">
       <Canvas>
         <ambientLight />
         <OrbitControls />
