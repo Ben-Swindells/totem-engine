@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useThree } from "@react-three/fiber";
 import { OrbitControls as OrbitController } from "three/examples/jsm/controls/OrbitControls";
 
-const CameraController = () => {
+export const OrbitControls = () => {
   const { camera, gl } = useThree();
   useEffect(() => {
     const controls = new OrbitController(camera, gl.domElement);
@@ -14,8 +14,4 @@ const CameraController = () => {
     };
   }, [camera, gl]);
   return null;
-};
-
-export const OrbitControls = () => {
-  return <CameraController />;
 };

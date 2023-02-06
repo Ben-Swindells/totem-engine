@@ -6,11 +6,19 @@ import { GizmoBar } from "../components/GizmoBar";
 import { Inspector, Hierarchy, Assets } from "../components/windows";
 import Toolbar from "../components/Toolbar";
 
+//Slices
+import { useSelector, useDispatch } from "react-redux";
+import { selectGrid, selectCamera } from "../components/GizmoBar/gizmoSlice";
+
+//Gizmos
+
 const SceneWindow = () => {
+  const camera = useSelector(selectCamera);
+  const grid = useSelector(selectGrid);
   return (
     <>
       <GizmoBar />
-      <Level />
+      <Level cameraActive={camera} gridActive={grid} />
     </>
   );
 };
