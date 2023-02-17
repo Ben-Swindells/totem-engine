@@ -10,6 +10,9 @@
     },
     "dev": {
       "cache": false
+    },
+    "local": {
+      "cache": false
     }
   }
 }

@@ -1,0 +1,12 @@
+appId: com.example.totemengine
+productName: Totem Engine
+copyright: Ben Swindells
+directories:
+  output: build
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null

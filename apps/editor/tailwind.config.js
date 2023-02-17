@@ -1,7 +1,7 @@
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./renderer/pages/**/*.{js,ts,jsx,tsx}",
+    "./renderer/components/**/*.{js,ts,jsx,tsx}",
     "../../packages/renderer/components/**/*.{js,ts,jsx,tsx}",
     "../../packages/ui/editor/**/*.{js,ts,jsx,tsx}",
   ],

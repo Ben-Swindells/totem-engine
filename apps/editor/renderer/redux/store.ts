@@ -1,9 +1,9 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore, Store } from "@reduxjs/toolkit";
 
 //Slices
 import gizmoReducer from "../components/GizmoBar/gizmoSlice";
 
-export const store = configureStore({
+export const store:Store = configureStore({
   reducer: {
     gizmos: gizmoReducer,
   },
